@@ -26,8 +26,17 @@ const kolumna = document.querySelector(".main_column")
 kolumna.appendChild(piat);
 
 //6
-const szust = document.querySelector( ".side_column ")
+const szust = document.querySelectorAll( ".side_column")
 console.log({szust});
-const dele = document.removeChild("h1");
-szust.log(dele)
+szust[1].remove();
+
+//7
+const zad7=document.querySelector("footer");
+console.log(zad7);
+const div=document.createElement('div');
+div.style.backgroundColor="pink";
+zad7.appendChild(div);
+const  tekst =document.createElement('p');
+tekst.innerHTML="&copy";
+div.appendChild(tekst);
 
