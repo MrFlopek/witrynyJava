@@ -31,12 +31,12 @@ console.log({szust});
 szust[1].remove();
 
 //7
-const zad7=document.querySelector("footer");
+const zad7=document.querySelector("footer"); // szukanie miejsca
 console.log(zad7);
-const div=document.createElement('div');
-div.style.backgroundColor="pink";
-zad7.appendChild(div);
+const div=document.createElement('div'); // dodawanie elementu
+div.style.backgroundColor="pink"; // nadawanie koloru
+zad7.appendChild(div); // zmiana miejsca elementu
 const  tekst =document.createElement('p');
-tekst.innerHTML="&copy";
+tekst.innerHTML="&copy"; // dodawanie tekstu
 div.appendChild(tekst);
 
