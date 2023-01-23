@@ -40,3 +40,14 @@ const  tekst =document.createElement('p');
 tekst.innerHTML="&copy"; // dodawanie tekstu
 div.appendChild(tekst);
 
+//8
+const zad8=document.createElement('p')
+zad8.innerHTML="<i>Pochylony tekst</i>"
+console.log(zad8)
+const zad8m=document.createElement('p')
+zad8m.innerText="<i>Pochylony tekst</i>"
+console.log(zad8m)
+const dodawanie = document.querySelector("header")
+console.log(dodawanie)
+dodawanie.appendChild(zad8)
+dodawanie.appendChild(zad8m)
