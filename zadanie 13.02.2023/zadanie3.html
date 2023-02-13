@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <script src="zadanie3.js" defer></script>
+</head>
+<body>
+  <div>
+    <textarea onfocus="this.style.backgroundColor='yellow'"></textarea>
+  </div>
+    <p><input onblur="this.value=this.value.toUpperCase()"></p>
+    <p>
+        <select onchange="this.style.color=this.value">
+            <option>black</option>
+            <option>brown</option>
+            <option>blue</option>
+            <option>blueviolet</option>
+            <option>burlywood</option>
+            <option>bisque</option>
+        </select>
+    </p>
+    <p onclick="this.style.fontSize='xx-large'" ondblclick="this.style.fontSize='medium'">Dowolny tekst</p>
+    <div>
+        <img src="usmiech.png" oncontextmenu="this.value=alert(this.src)">
+    </div>
+    <div>
+        <input type="text" onkeyup="document.getElementById('element').innerText=this.value">
+        <p id="element"></p>
+    </div>
+    <h1 style="color:green" onmouseover="this.style.textShadow='2px 2px 5px green'" onmouseleave="this.style.textShadow=''">Dowolny tekst</h1>
+</body>
+</html>
