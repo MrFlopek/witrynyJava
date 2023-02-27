@@ -54,3 +54,32 @@ szesc.addEventListener('click', function () {
         console.log(szesc_jeden)
     }
 );
+
+//7
+
+//8
+document.querySelector('#osemeczka').addEventListener('click', function () {
+    const osiem1 = document.querySelector('#z8');
+    console.log(osiem1.dataset);
+    console.log(osiem1.attributes);
+
+const osiem_kontener = document.querySelector('#z81');
+for (const attribute of osiem_kontener.attributes) {
+    let para = document.createElement("p");
+    para.innerHTML = "Atrybut: <b>" + attribute.nodeName
+        + "</b> na wartości: </b>" + attribute.nodeValue + "</b>";
+    osiem_kontener.appendChild(para);
+}
+});
+
+//9
+const dziewiec = document.querySelector('#dziewiateczka');
+dziewiec.addEventListener('click', function (){
+   let kolory = '0123456789ABCDEF';
+   let kodKoloru = '#';
+   for (let i= 0; i < 6; i++) {
+       kodKoloru += kolory[Math.floor(Math.random() * 16)];
+   }
+   console.log(kodKoloru);
+   document.getElementById('z9').style.backgroundColor = kodKoloru;
+});
