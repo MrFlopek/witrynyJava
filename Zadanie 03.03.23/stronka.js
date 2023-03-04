@@ -1,30 +1,24 @@
-//1
-const jeden = document.querySelector("#s1")
-jeden.addEventListener('click', function () {
-    document.querySelector("#s1").innerHTML = "&#8613"
-});
-console.log(jeden)
-//2
-const dwa = document.querySelector("#s2")
-dwa.addEventListener('click', function () {
-    document.querySelector("#s2").innerHTML = "&#8613"
-});
-console.log(dwa)
-//3
-const trzy = document.querySelector("#s3")
-trzy.addEventListener('click', function () {
-    document.querySelector("#s3").innerHTML = "&#8613"
-});
-console.log(trzy)
-//4
-const cztery = document.querySelector("#s4")
-cztery.addEventListener('click', function () {
-    document.querySelector("#s4").innerHTML = "&#8613"
-});
-console.log(cztery)
-//5
-const piec = document.querySelector("#s5")
-piec.addEventListener('click', function () {
-    document.querySelector("#s5").innerHTML = "&#8613"
-});
-console.log(piec)
+const elements = document.getElementsByTagName("pre");
+for (let i = 0; i < elements.length; i++) {
+    elements[i].style.display = "none";
+}
+function op(obj, id) {
+    const x = document.getElementById(obj);
+    const elements = document.getElementsByTagName("pre");
+    for (let i = 0; i < elements.length; i++) {
+        if (elements[i].id === obj) {
+            if (elements[i].style.display === "none") {
+                elements[i].style.display = "block";
+                document.getElementById(id).innerHTML = "&#8613;";
+                document.getElementById(id).href = "#";
+            } else {
+                elements[i].style.display = "none";
+                document.getElementById(id).innerHTML = "&#8615;";
+                document.getElementById(id).href = "/";
+            }
+        } else {
+            elements[i].style.display = "none";
+        }
+    }
+    return false;
+}
