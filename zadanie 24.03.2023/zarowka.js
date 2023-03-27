@@ -11,3 +11,9 @@ document.querySelector("#jeden").addEventListener("click", function () {
 document.querySelector('#checkboxjeden').addEventListener('click', function (){
     document.getElementById('zarowkazdj').src="zarowka2.jpg"
 })
+document.querySelector("#radiojeden").addEventListener("click", function () {
+    document.getElementById("zarowkazdj").src = "zarowka2.jpg";
+});
+document.querySelector("#radiodwa").addEventListener("click", function () {
+    document.getElementById("zarowkazdj").src = "zarowka1.jpg";
+});
