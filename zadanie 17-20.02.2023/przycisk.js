@@ -77,7 +77,7 @@ const dziewiec = document.querySelector('#dziewiateczka');
 dziewiec.addEventListener('click', function (){
    let kolory = '0123456789ABCDEF';
    let kodKoloru = '#';
-   for (let i= 0; i < 6; i++) {
+   for (var i= 0; i < 6; i++) {
        kodKoloru += kolory[Math.floor(Math.random() * 16)];
    }
    console.log(kodKoloru);
