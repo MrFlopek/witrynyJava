@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="kolor.js" defer></script>
+    <style>
+        td{
+            width: 70px;
+            padding: 70px;
+        }
+        table{
+            border-collapse: collapse;
+        }
+        .hide_number{
+            text-shadow: 0 0 8px #000000;
+            color: transparent;
+            user-select: none;
+        }
+    </style>
+</head>
+<body>
+<h1 id="jeden" style="color: navy">Zmień kolor tekstu</h1>
+<table>
+<tr>
+    <td style="background-color: gold" onmouseover="jeden.style.color='gold'" onmouseleave="jeden.style.color='navy'">GOLD</td>
+    <td style="background-color: khaki" onmouseover="jeden.style.color='khaki'" onmouseleave="jeden.style.color='navy'">KHAKI</td>
+    <td style="background-color: silver" onmouseover="jeden.style.color='silver'" onmouseleave="jeden.style.color='navy'">SILVER</td>
+    <td style="background-color: peru" onmouseover="jeden.style.color='peru'" onmouseleave="jeden.style.color='navy'">PERU</td>
+</tr>
+</table>
+<div>
+    <p>Numer telefonu: 12<span id="dwa" class="hide_number">3</span>-<span id="trzy" class="hide_number">456</span>-<span id="cztery" class="hide_number">789</span></p>
+    <input type="checkbox" id="piec"><label for="piec" style="user-select: none">Pokaż cały numer telefonu</label>
+</div>
+</body>
+</html>
