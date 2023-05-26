@@ -4,17 +4,33 @@
 //    i++;
 //}
 
-const jeden = document.getElementById('guziczek');
-jeden.addEventListener("click", function (){
-    jeden.innerHTML='';
-    const kolumnyinput = document.getElementById('kolumny');
-        const kolumny = parseInt(kolumnyinput.value);
-        console.log('Liczba Kolumn: ' + kolumny)
-})
-const dwa = document.getElementById('guziczek');
-dwa.addEventListener("click", function (){
-    dwa.innerHTML='';
-    const wierszeinput = document.getElementById('wiersze');
-    const wiersze = parseInt(wierszeinput.value);
-    console.log('Liczba Wierszy: ' + wiersze)
-})
+przycisk.addEventListener("click", function(){
+    const tabela=document.querySelector("#tabela");
+    tabela.innerHTML='';
+
+
+    const kolumny=document.querySelector("#kolumny");
+    kolumnos=parseInt(kolumny.value)
+    let k=1;
+
+    const wiersze=document.querySelector("#wiersze");
+    wierszos=parseInt(wiersze.value);
+    let w=1;
+
+    console.log('liczba kolumn '+kolumnos+' liczba wierszy '+wierszos);
+    while(w<=wierszos){
+        const tworzone = document.createElement("tr")
+
+        while(k<=kolumnos){
+            const tworzoned = document.createElement("td")
+            tworzoned.innerHTML=k+'|'+w;
+            tabela.appendChild(tworzoned);
+            k++;
+        }
+        k=1;
+        w++;
+        tabela.appendChild(tworzone);
+
+    };
+});
+

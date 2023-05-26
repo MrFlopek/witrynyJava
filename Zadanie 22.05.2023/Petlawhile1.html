@@ -1,21 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
-  <script src="Petlawhile1.js" defer></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="Petlawhile1.js" defer></script>
     <style>
-        #tabelka{
-            border-color: red;
+        table{
+            border-collapse: collapse;
+        }
+        td{
+            border:1px #002aff solid;
+            padding:5px;
         }
     </style>
 </head>
 <body>
-<p>Liczba Kolumn: <input type="number" aria-valuemin="1" id="kolumny"></p>
-<p>Liczba Wierszy: <input type="number" aria-valuemin="1" id="wiersze"></p>
-<input type="button" value="Generuj" id="guziczek">
-<table id="tabelka">
+<label for="kolumny">Kolumny</label>
+<input type="text" id="kolumny" name="kolumny">
+<label for="wiersze">Wiersze</label>
+<input type="text" id="wiersze" name="wiersze">
+<button id="przycisk">GENERUJ</button>
+
+<table id="tabela">
+
+
 
 </table>
+
 </body>
 </html>
