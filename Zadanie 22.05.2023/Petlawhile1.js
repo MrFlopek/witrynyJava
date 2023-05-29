@@ -31,6 +31,6 @@ przycisk.addEventListener("click", function(){
         w++;
         tabela.appendChild(tworzone);
 
-    };
+    }
 });
 
