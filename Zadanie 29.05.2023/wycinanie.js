@@ -24,7 +24,7 @@ koniec.addEventListener('click', function (){
 var tekstjeden = document.getElementsByClassName('wycineczek')[0].innerText;
 var pierwsze = document.getElementById('guzik');
 pierwsze.addEventListener('click',function (){
-    alert(tekstjeden.substr(27, 36));
+    alert(tekstjeden.substr(27, 9));
 });
 var drugie = document.getElementById('guziczek');
 drugie.addEventListener('click', function (){
