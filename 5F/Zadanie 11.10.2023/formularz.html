@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <script src="formularz.js" defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<style>
+    .container{
+        background-color: darkgray;
+        padding: 30px;
+        border-radius:20px;
+        border: 5px darkgray solid;
+    }
+</style>
+<body>
+<h1 style="text-align: center">Rejestracja</h1>
+<div class="container">
+<form>
+    <div class="row mb-3">
+        <label for="inputEmail3" class="col-sm-2 col-form-label">Adres Email</label>
+        <div class="col-sm-10">
+            <input type="email" class="form-control" id="inputEmail3" placeholder="jan@domena.pl">
+        </div>
+    </div>
+    <div class="row mb-3">
+        <label for="inputPassword3" class="col-sm-2 col-form-label">Hasło</label>
+        <div class="col-sm-10">
+            <input type="password" class="form-control" id="inputPassword3" placeholder="min. 8 znaków">
+        </div>
+    </div>
+    <fieldset class="row mb-3">
+        <legend class="col-form-label col-sm-2 pt-0">Województwo</legend>
+        <div class="col-sm-10">
+        <select class="form-select" aria-label="Default select example">
+        <option selected>Wybierz</option>
+        <option value="1">dolnośląskie</option>
+        <option value="2">kujawsko-pomorskie</option>
+        <option value="3">lubelskie</option>
+        <option value="4">lubuskie</option>
+        <option value="5">łódzkie</option>
+        <option value="6">małopolskie</option>
+        <option value="7">mazowieckie</option>
+        <option value="8">opolskie</option>
+        <option value="9">podkarpackie</option>
+        <option value="10">podlaskie</option>
+        <option value="11">pomorskie</option>
+        <option value="12">śląskie</option>
+        <option value="13">świętokrzyskie</option>
+        <option value="14">warmińsko-mazurskie</option>
+        <option value="15">wielkopolskie</option>
+        <option value="16">zachodniopomorskie</option>
+
+        </select>
+        </div>
+    </fieldset>
+
+    <fieldset class="row mb-3">
+        <legend class="col-form-label col-sm-2 pt-0">Wiek</legend>
+        <div class="col-sm-10">
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                <label class="form-check-label" for="gridRadios1">
+                    Osoba pełnoletnia
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                <label class="form-check-label" for="gridRadios2">
+                    Osoba niepełnoletnia
+                </label>
+            </div>
+            <div class="form-check disabled">
+                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3" disabled>
+                <label class="form-check-label" for="gridRadios3">
+                    Wiek nieznany
+                </label>
+            </div>
+        </div>
+    </fieldset>
+    <fieldset class="row mb-3">
+        <legend class="col-form-label col-sm-2 pt-0">Dziecko</legend>
+        <div class="col-sm-10">
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck1">
+                <label class="form-check-label" for="gridCheck1">
+                    Czy masz dziecko?
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
+                <label class="form-check-label" for="flexCheckIndeterminate">
+                    Czy pobierasz zasiłen na dziecko?
+                </label>
+            </div>
+            <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                <label class="form-check-label" for="flexSwitchCheckDefault">Czy masz zwierzę domowe</label>
+            </div>
+        </div>
+    </fieldset>
+    <button type="submit" class="btn btn-primary">Zarejestruj</button>
+</form>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
