@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<script type="text/javascript">
+    function oblicz_sume()
+    {
+        var liczba1 = document.getElementById("jeden").value;
+        var liczba2 = document.getElementById("dwa").value;
+        var suma = parseInt(liczba1) + parseInt(liczba2);
+        document.getElementById("wynik").innerHTML = suma;
+    console.log(liczba1)
+        console.log(liczba2)
+        console.log(suma)
+
+    }
+</script>
+<style>
+    #jeden{
+        width: 90px;
+        margin-top: 10px;
+        margin-left: 30px;
+        margin-right: 10px;
+    }
+    #dwa{
+        margin-top: 10px;
+        width: 90px;
+        margin-left: 10px;
+    }
+    #guziczek{
+        margin-top: 10px;
+        margin-left: 20px;
+        height: 40px;
+        border-radius: 10px;
+    }
+</style>
+<body>
+<div class="input-group flex-nowrap">
+    <p><input type="number" id="jeden" class="form-control" aria-describedby="addon-wrapping"></p>
+    <p><input type="number" id="dwa" class="form-control" aria-describedby="addon-wrapping"></p>
+    <button id="guziczek" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="oblicz_sume()">
+        Oblicz sumę
+    </button>
+</div>
+
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+            <p>Wynik:<span id="wynik" style="color: red"></span></p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Zamknij</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
