@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+<ul class="nav nav-tabs" id="myTab" role="tablist">
+    <li class="nav-item" role="presentation">
+        <button class="nav-link active text-warning" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Pokaż/ukryj</button>
+    </li>
+    <li class="nav-item text-success" role="presentation">
+        <button class="nav-link text-success" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Tabela</button>
+    </li>
+    <li class="nav-item text-danger" role="presentation">
+        <button class="nav-link text-danger" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Formularz</button>
+    </li>
+</ul>
+<div class="tab-content" id="myTabContent">
+    <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">...</div>
+    <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0"><table class="table table-bordered">
+        <thead>
+        <tr>
+            <th colspan="5" style="text-align: center">Mieszko I</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td colspan="2" style="text-align: center">Dobrawa</td>
+            <td colspan="3" style="text-align: center">Oda</td>
+        </tr>
+        <tr>
+            <td style="text-align: center">Bolesław</td>
+            <td style="text-align: center">Świętosława</td>
+            <td style="text-align: center">Mieszko</td>
+            <td style="text-align: center">Świętopełk</td>
+            <td style="text-align: center">Lambert</td>
+        </tr>
+        </tbody>
+    </table></div>
+    <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0"><form class="row g-3">
+        <div class="col-md-6">
+            <label for="inputEmail4" class="form-label">Imię</label>
+            <input type="email" class="form-control" id="inputEmail4" placeholder="Imię">
+        </div>
+        <div class="col-md-6">
+            <label for="inputPassword4" class="form-label">Nazwisko</label>
+            <input type="password" class="form-control" id="inputPassword4" placeholder="Nazwisko">
+        </div>
+        <div class="col-12">
+            <label for="inputAddress" class="form-label">Adres</label>
+            <input type="text" class="form-control" id="inputAddress" placeholder="Adres">
+        </div>
+        <div class="col-md-6">
+            <label for="inputCity" class="form-label">Kod pocztowy</label>
+            <input type="text" class="form-control" id="inputCity" placeholder="Kod pocztowy">
+        </div>
+        <div class="col-md-6">
+            <label for="inputZip" class="form-label">Miasto</label>
+            <input type="text" class="form-control" id="inputZip" placeholder="Miasto">
+        </div>
+    </form></div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
